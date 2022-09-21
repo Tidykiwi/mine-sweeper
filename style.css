@@ -1,0 +1,27 @@
+.grid {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+}
+
+.grid div {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checked {
+    background-color: red;
+}
+
+.bomb {
+    background-color: orange;
+}
+
+.endGame {
+    padding: 2rem 2em 2rem 2rem;
+}
