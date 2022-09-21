@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (i > 10 && squares[i - width].classList.contains('bomb')) total++
                 if (i > 11 && !isLeftEdge && squares[i -1 -width].classList.contains('bomb')) total++
                 if (i < 98 && !isRightEdge && squares[i +1].classList.contains('bomb')) total++
-                if (i < 90 && !isLeftEdge && squares[i -1].classList.contains('bomb')) total++
+                if (i < 90 && !isLeftEdge && squares[i -1 +width].classList.contains('bomb')) total++
                 if (i < 88 && !isRightEdge && squares[i +1 +width].classList.contains('bomb')) total++
                 if (i < 89 && squares[i + width].classList.contains('bomb')) total++
                 squares[i].setAttribute('data', total)
@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show all the bombs
         squares.forEach(square => {
             if (square.classList.contains('bomb')) {
+                square.style.backgroundColor = 'red'
                 square.innerHTML = '💣'  
             }
         })

@@ -4,24 +4,35 @@
     display: flex;
     flex-wrap: wrap;
     background-color: grey;
+    border: solid 1px black;
 }
 
 .grid div {
+    box-sizing: border-box;
     height: 40px;
     width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: solid 1px black;
 }
 
 .checked {
-    background-color: red;
+    background-color: #b0a9a9;
 }
 
 .bomb {
-    background-color: orange;
+    background-color: grey;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .endGame {
+    align-items: center;
     padding: 2rem 2em 2rem 2rem;
 }
